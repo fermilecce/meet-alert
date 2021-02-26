@@ -1,0 +1,30 @@
+<form>
+    <input type="submit" style="display: none;" id="modal" value="">
+</form>
+
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<script type="text/javascript">
+$(document).ready(function(){
+    $("#modal").click(); 
+});
+</script>
+
+<script>
+$('form').submit(function(e){
+	e.preventDefault();
+	$.ajax({
+  url:'https://api.telegram.org/bot1645177211:AAHbZUMB9JRoEslUFK0Aqanp1SDIcBnu0i4/sendMessage?chat_id=-1001290961118&text=meet.google.com/lookup/giovwylc4a',
+  method:'POST',
+  success:function(){
+  	alert('Messaggio inviato!');
+  }
+  });
+});
+</script>
+
+<head>
+  <meta http-equiv='refresh' content='0; URL=meet.google.com/lookup/giovwylc4a'>
+</head>
